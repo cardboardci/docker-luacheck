@@ -1,0 +1,10 @@
+---
+name: Docker Luacheck
+slug: docker-luacheck
+project: cardboardci
+namespace: []
+description: Luacheck is a static analyzer and a linter for Lua.
+license:
+  name: MIT
+tags:
+  - docker
