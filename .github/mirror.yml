@@ -1,0 +1,8 @@
+---
+name: github
+provider: github.com
+repository: docker-luacheck
+url: https://github.com/cardboardci/docker-luacheck
+clone:
+  ssh: git@github.com:cardboardci/docker-luacheck.git
+  https: https://github.com/cardboardci/docker-luacheck.git
