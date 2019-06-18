@@ -1,5 +1,16 @@
-FROM alpine:3.8
-COPY rootfs/ /
+FROM cardboardci/ci-core:disco
+USER root
+
+COPY provision/pkglist /cardboardci/pkglist
+RUN apt-get update \
+    && xargs -a /cardboardci/pkglist apt-get install --no-install-recommends -y \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY provision/lualist /cardboardci/lualist
+RUN  xargs -a /cardboardci/lualist luarocks install
+
+USER cardboardci
 
 ##
 ## Image Metadata
