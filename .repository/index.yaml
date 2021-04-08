@@ -1,0 +1,16 @@
+slug: docker-luacheck
+description: Luacheck is a static analyzer and a linter for Lua.
+project: cardboardci
+namespace: docker
+status: archived
+icon: icon.svg
+license:
+  type: MIT
+  content: Jonathan Beverly <jrbeverly>
+  year: 2019
+topics: |-
+  [
+    "lua",
+    "dockerfile",
+    "linter"
+  ]
